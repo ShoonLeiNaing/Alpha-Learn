@@ -1,13 +1,15 @@
 import React from 'react'
 import Footer from '../Footer/Footer'
-import Hero from '../Hero/Hero'
+// import Hero from '../Hero/Hero'
 import Navbar from '../Navbar/Navbar'
+import Mentors from '../Mentors/Mentors'
 import './Home.css'
 
 export const Home = () => {
     return (
         <>
             <Navbar />
+            <Mentors />
             <Footer />
         </>
     )
