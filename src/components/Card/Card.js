@@ -8,7 +8,7 @@ const Card = () => {
                 Build your career
             </h5>
             <div className='row'>
-                <div className='col s12 m12 l6'>
+                <div className='col s12 l6'>
                     <div className="card horizontal">
                         <div className='card-imageContainer'>
                             
@@ -23,7 +23,7 @@ const Card = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col m12 s12 l6'>
+                <div className='col s12 l6'>
                 <div className="card horizontal">
                         <div className='card-imageContainer'>
                             
@@ -40,7 +40,7 @@ const Card = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='col s12 m12 l6'>
+                <div className='col s12 l6'>
                     <div className="card horizontal">
                         <div className='card-imageContainer'>
                             
@@ -55,7 +55,7 @@ const Card = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col m12 s12 l6'>
+                <div className='col  s12 l6'>
                 <div className="card horizontal">
                         <div className='card-imageContainer'>
                             

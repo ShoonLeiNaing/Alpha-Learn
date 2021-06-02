@@ -28,10 +28,6 @@ input{
   margin:0 20px;
 }
 
-
-.btn{
-  
-}
 .btn-container{
   margin-left: 60px;
 }
@@ -41,7 +37,8 @@ input{
   .nav-container{
     margin:0;
   }
-  .btn{
-    width: 80%;
+  
+  .input-container{
+    display: none;
   }
 }
