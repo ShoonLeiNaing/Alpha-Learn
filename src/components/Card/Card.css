@@ -1,0 +1,38 @@
+.card__container{
+    margin:20px 40px;
+}
+.card-title{
+    text-align: center;
+    word-spacing: 5px;
+}
+.card{
+    margin: 30px;
+    margin-bottom: 0px;
+    height: 180px;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-around;
+}
+.card-imageContainer{
+     flex: 0.3;
+     background-color: lightgray;
+     height: 60%;
+     margin:0 30px;
+}
+.card-textContainer{
+    flex:0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+.card-textTitle{
+    font-weight: 500;
+    margin-bottom: 0%;
+}
+
+@media screen and (max-width:670px){
+    .card__container{
+        margin:0px;
+    }
+}
