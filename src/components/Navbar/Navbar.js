@@ -39,8 +39,8 @@ const Navbar = () => {
                             <div><a href="#!" className="brand-logo black-text ">Logo</a></div>
                             <a href="#" data-target="slide-out" className="sidenav-trigger black-text"><i className="material-icons">menu</i></a>
                             <div className='input-container'>
-                               <input placeholder='what do you want to learn today?'/>
-                               <i class="material-icons black-text">search</i>
+                                <input placeholder='what do you want to learn today?' />
+                                <i class="material-icons black-text">search</i>
                             </div>
                             <ul className="right hide-on-med-and-down black-text">
                                 <li><a href="#" className='black-text'>Home</a></li>
@@ -48,17 +48,17 @@ const Navbar = () => {
                                 <li><a href="#" className='black-text'>Campus</a></li>
                                 <li><a href="#" className='black-text'>Blog</a></li>
                                 <li><div className='btn-container'><a class="waves-effect waves-light btn blue accent-3">Login</a></div></li>
-                            </ul> 
+                            </ul>
                         </div>
                     </nav>
-                    <ul id="slide-out" className="sidenav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Campus</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a class="waves-effect waves-light btn">Login</a></li>
-                    </ul>
                 </div>
+                <ul id="slide-out" className="sidenav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Campus</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a class="waves-effect waves-light btn">Login</a></li>
+                </ul>
             </header>
         </>
     )
