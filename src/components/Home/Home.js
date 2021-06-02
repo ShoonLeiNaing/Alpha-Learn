@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../Card/Card'
 import Footer from '../Footer/Footer'
 import Hero from '../Hero/Hero'
 import Navbar from '../Navbar/Navbar'
@@ -8,7 +9,9 @@ export const Home = () => {
     return (
         <>
             <Navbar />
-            <Footer />
+            <Hero/>
+            <Card/>
+            <Footer/>
         </>
     )
 }
