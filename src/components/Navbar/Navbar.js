@@ -50,17 +50,17 @@ const Navbar = () => {
                                 <li><div className='btn-container'><a class="waves-effect waves-light btn blue accent-3 nav-btn">Login</a></div></li>
                             </ul>
                         </div>
-                        
+
                     </nav>
-                    </div>
-                    <ul id="slide-out" className="sidenav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Campus</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a class="waves-effect waves-light btn nav-btn">Login</a></li>
-                    </ul>
-                
+                </div>
+                <ul id="slide-out" className="sidenav sidenav-close">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Campus</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a class="waves-effect waves-light btn nav-btn">Login</a></li>
+                </ul>
+
             </header>
         </>
     )
