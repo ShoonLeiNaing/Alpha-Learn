@@ -1,0 +1,32 @@
+.email-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width:100%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+.email-image, .body{
+    grid-row: 1 / 2;
+}
+
+.email-image{ grid-column: 1 / 4;}
+
+.body{
+    grid-column: 3/ -1;
+    background: white;
+    padding: 2em;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.25);
+}
+
+.colla{
+    grid-column: 1/4;
+    background: white;
+    padding: 2em;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.25);
+}
+
