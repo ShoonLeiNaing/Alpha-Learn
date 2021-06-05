@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero'
 import Navbar from '../Navbar/Navbar'
 import Mentors from '../Mentors/Mentors'
 import './Home.css'
+import EmailRequest from '../EmailRequest/EmailRequest'
 
 export const Home = () => {
     return (
@@ -12,6 +13,7 @@ export const Home = () => {
             <Navbar />
             <Hero/>
             <Card/>
+            <EmailRequest/>
             <Mentors />
             <Footer />
 
