@@ -1,0 +1,87 @@
+.emailRequest-container{
+    margin: 80px;
+}
+
+.emailRequest-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.emailRequest-img{
+    height: 300px;
+    width: 80%;
+    object-fit: contain;
+}
+.emailRequest-img>img{
+    height: 100%;
+    width: 100%;
+}
+.emailRequest-footer{
+    display: flex;
+    flex-direction: row;
+}
+.emailRequest-text{
+    text-align: center;
+    flex: 0.65;
+    margin: 15px 0;    
+}
+.emailRequest-text>p{
+    text-align: start;
+    margin: 20px 40px;
+    padding: 0 60px;
+    font-size: 14px;
+}
+.emailform{
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    align-items: center ; 
+    margin-top: -150px;
+    margin-bottom: 100px;
+}
+.emailform>h6{
+    font-size: 20px;
+    margin: 30px;
+}
+.emailform > input{
+    padding: 5px 15px;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    
+}
+.emailform> .btn{
+    width: 75%;
+    margin: 0 auto ;    
+    
+}
+
+@media screen and (max-width:880px){
+    .emailRequest-container{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .emailRequest-img{
+        height: 250px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .emailRequest-footer{
+        flex-direction: column;
+    }
+    .emailRequest-text>p{
+        margin: 10px;
+        padding: 20px;
+    }
+    .emailform{
+        margin: 0px;
+        padding: 25px;
+    }
+    .emailform>h6{  
+        margin: 15px;
+    }
+    
+    
+}

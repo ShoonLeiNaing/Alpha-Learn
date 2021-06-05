@@ -58,7 +58,7 @@ const Navbar = () => {
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Campus</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a class="waves-effect waves-light btn nav-btn">Login</a></li>
+                    <li><a class="waves-effect waves-light btn nav-btn blue accent-3 ">Login</a></li>
                 </ul>
 
             </header>
