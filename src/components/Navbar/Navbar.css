@@ -31,6 +31,9 @@ input{
 .btn-container{
   margin-left: 60px;
 }
+.nav-btn{
+  width: 80%;
+}
 
 @media screen and (max-width:670px){
   
