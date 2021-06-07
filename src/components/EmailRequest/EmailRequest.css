@@ -37,19 +37,19 @@
     align-items: center ; 
     margin-top: -160px;
     margin-bottom: 100px;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 .emailform>h6{
     font-size: 20px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 .emailform > input{
     padding: 10px 15px;
     width: 70%;
     border-radius: 10px;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px;    
 }
+
 .emailform> .btn{
     width: 75%;
     margin: 0 auto ; 
