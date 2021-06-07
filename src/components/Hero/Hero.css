@@ -17,13 +17,17 @@
     align-items: center;
 }
 .hero-text{
-    letter-spacing: 2px;
-    word-spacing: 8px;
+    font-size: 45px !important;
+    letter-spacing: 7px;
+    word-spacing: 10px;
 }
 .btn{
-    width:130px;
-    margin-left: -110px;
-    margin-top: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width:140px;
+    margin-left: -160px;
+    margin-top: 20px;
+    box-shadow: none !important;
 }
 .image-container{
     height: 200px;
@@ -44,9 +48,9 @@
     .row{
         display: inline;
     }
-    .btn{
+    .hero__container>.btn{
         width: 150px !important;
-        margin-left: 0px;
+        
     }
     .left-container{
         margin: 40px;

@@ -35,15 +35,16 @@
     display: flex;
     flex-direction: column;
     align-items: center ; 
-    margin-top: -150px;
+    margin-top: -160px;
     margin-bottom: 100px;
+    padding: 20px 0;
 }
 .emailform>h6{
     font-size: 20px;
-    margin: 30px;
+    margin: 20px;
 }
 .emailform > input{
-    padding: 5px 15px;
+    padding: 10px 15px;
     width: 70%;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -51,8 +52,8 @@
 }
 .emailform> .btn{
     width: 75%;
-    margin: 0 auto ;    
-    
+    margin: 0 auto ; 
+    height: 40px;     
 }
 
 @media screen and (max-width:880px){
@@ -82,6 +83,7 @@
     .emailform>h6{  
         margin: 15px;
     }
+    
     
     
 }
