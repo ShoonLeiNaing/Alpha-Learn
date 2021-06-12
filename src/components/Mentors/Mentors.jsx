@@ -1,9 +1,10 @@
- /* eslint-disable */
+/* eslint-disable */
 import React, { useEffect } from 'react';
-import M from 'materialize-css';
+// import M from 'materialize-css';
 import './Mentors.css';
 
 const handleAfterDocumentLoaded = () => {
+    const M = window.M;
     const elems = document.querySelectorAll('.carousel');
     M.Carousel.init(elems, { indicators: true, fullWidth: true });
 }
