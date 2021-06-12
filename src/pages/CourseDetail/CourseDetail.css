@@ -1,0 +1,29 @@
+.courseDetail-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.clipartlogo.com/files/istock/previews/7379/73798957-web-and-software-developer.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    
+}
+
+.courseDetail-headerText{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    text-align: center;
+}
+
+.courseDetail-headerText >p{
+    margin: 30px 0px;
+}
+
+.enroll-btn{
+    width: 250px;
+}
+
+.objectives-container{
+    margin:0px 80px;
+}

@@ -15,20 +15,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .hero-text{
     font-size: 45px !important;
     letter-spacing: 7px;
     word-spacing: 10px;
+    
 }
-.btn{
-    border-radius: 5px;
-    height: 40px;
-    width:140px;
-    margin-left: -160px;
-    margin-top: 20px;
-    box-shadow: none !important;
+
+.heroBtn{
+    margin-left: -160px !important;
 }
+
 .image-container{
     height: 200px;
     width: 200px;
