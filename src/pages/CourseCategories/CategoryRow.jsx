@@ -3,192 +3,56 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./CourseCategory.css";
+import Stars from "./Stars";
 import settings from "./SlickSetting";
+import products, { android, databases } from "./Products";
 
-const Stars = () => {
+
+const Individual = ({ products, head }) => {
   return (
-    <>
-      <FullStars />
-      <NormalStars />
-      &nbsp;&nbsp;
-    </>
-  )
-
-}
-
-const FullStars = () => {
-  // calculate star rate, not counting from the sky
-  return (
-    <span style={{ color: "#ffd300" }}>
-      <i className="fas fa-star"></i>
-      <i className="fas fa-star"></i>
-      <i className="fas fa-star"></i>
-      <i className="fas fa-star"></i>
-    </span>
-  )
-}
-
-const NormalStars = () => {
-  return (
-    <span style={{ color: "#999da0" }}>
-      <i className="fas fa-star"></i>
-    </span>
+    <div className="container">
+      <h5 className="blue-text text-darken-4 m-cc-course-head">{head}</h5>
+      <Slider {...settings}>
+        {products.map((x, i) => {
+          return (
+            <div key={i} className="m-cc-img-card z-depth-3">
+              <img className="m-cc-img" src={x.img_src} alt={x.title} />
+              <div className="m-cc-card-body">
+                <div className="m-cc-card-title">{x.title}</div>
+                <div className="m-cc-card-text">{x.mentor}</div>
+                <div className="m-cc-card-foot">
+                  <Stars starsCount={x.stars} />
+                  {x.total}
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </Slider>
+    </div>
   )
 }
 
 
 const CategoryRow = () => {
-  const products = [
-    {
-      img: "https://via.placeholder.com/165",
-      title: 'React & Redux',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'Time Management',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'JavaScript Fullcourse',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'Graphic Design',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'Odio ut enim',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'Odio ut enim',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'Odio ut enim',
-      text: 'By Someone',
-      total: 433201
-    },
-    {
-      img: 'https://via.placeholder.com/165',
-      title: 'Odio ut enim',
-      text: 'By Someone',
-      total: 433201
-    }
-  ]
+
+  // fetch actual data. //
 
   return (
     <>
-      {/* Course Header */}
+      {/* Course Main Header */}
       <div className="center">
         <h4 className="blue-text text-darken-3">Computer Science</h4>
       </div>
-      {/* Course Header End */}
+      {/* Course Main Header End */}
 
       {/* Course Category Row */}
-      <div className="container">
-        <h5 className="blue-text text-darken-2">Web Development</h5>
-        <Slider {...settings}>
-          {products.map((x, i) => {
-            return (
-              <div key={i} className="m-cc-img-card">
-                <img className="m-cc-img" src={x.img} alt={x.title} />
-                <div className="m-cc-card-body">
-                  <div className="m-cc-card-title">{x.title}</div>
-                  <div className="m-cc-card-text">{x.text}</div>
-                  <div className="m-cc-card-foot"><Stars />{x.total}</div>
-                </div>
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
+      <Individual head="Web development" products={products} />
+      <Individual head="Android development" products={android} />
+      <Individual head="Database SQL/NoSQL" products={databases} />
+      <Individual head="Product Designing" products={products} />
+      <Individual head="Sever Side" products={products} />
       {/* Course Category Row End */}
-
-      <div className="container">
-        <h5 className="blue-text text-darken-2">Android Development</h5>
-        <Slider {...settings}>
-          {products.map((x, i) => {
-            return (
-              <div key={i} className="m-cc-img-card">
-                <img className="m-cc-img" src={x.img} alt={x.title} />
-                <div className="m-cc-card-body">
-                  <div className="m-cc-card-title">{x.title}</div>
-                  <div className="m-cc-card-text">{x.text}</div>
-                  <div className="m-cc-card-foot"><Stars />{x.total}</div>
-                </div>
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
-
-      <div className="container">
-        <h5 className="blue-text text-darken-2">Product Designing</h5>
-        <Slider {...settings}>
-          {products.map((x, i) => {
-            return (
-              <div key={i} className="m-cc-img-card">
-                <img className="m-cc-img" src={x.img} alt={x.title} />
-                <div className="m-cc-card-body">
-                  <div className="m-cc-card-title">{x.title}</div>
-                  <div className="m-cc-card-text">{x.text}</div>
-                  <div className="m-cc-card-foot"><Stars />{x.total}</div>
-                </div>
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
-
-      <div className="container">
-        <h5 className="blue-text text-darken-2">Databases SQL/NoSQL</h5>
-        <Slider {...settings}>
-          {products.map((x, i) => {
-            return (
-              <div key={i} className="m-cc-img-card">
-                <img className="m-cc-img" src={x.img} alt={x.title} />
-                <div className="m-cc-card-body">
-                  <div className="m-cc-card-title">{x.title}</div>
-                  <div className="m-cc-card-text">{x.text}</div>
-                  <div className="m-cc-card-foot"><Stars />{x.total}</div>
-                </div>
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
-
-      <div className="container">
-        <h5 className="blue-text text-darken-2">Sever Side</h5>
-        <Slider {...settings}>
-          {products.map((x, i) => {
-            return (
-              <div key={i} className="m-cc-img-card">
-                <img className="m-cc-img" src={x.img} alt={x.title} />
-                <div className="m-cc-card-body">
-                  <div className="m-cc-card-title">{x.title}</div>
-                  <div className="m-cc-card-text">{x.text}</div>
-                  <div className="m-cc-card-foot"><Stars />{x.total}</div>
-                </div>
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
-
     </>
   );
 }
