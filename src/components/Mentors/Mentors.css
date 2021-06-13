@@ -48,5 +48,6 @@ a.middle-indicator-text {
 }
 
 .neg-height {
-  height: 500px !important;
+  /* height: 700px !important; */
+  height: calc(80vh) !important;
 }
