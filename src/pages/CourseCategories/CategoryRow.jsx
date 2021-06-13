@@ -5,20 +5,34 @@ import Slider from "react-slick";
 import "./CourseCategory.css";
 import settings from "./SlickSetting";
 
-
 const Stars = () => {
-  // calculate star rate, not counting from the sky
   return (
     <>
-      <span style={{ color: "#ffd300" }}>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        &nbsp;&nbsp;
-      </span>
-
+      <FullStars />
+      <NormalStars />
+      &nbsp;&nbsp;
     </>
+  )
+
+}
+
+const FullStars = () => {
+  // calculate star rate, not counting from the sky
+  return (
+    <span style={{ color: "#ffd300" }}>
+      <i className="fas fa-star"></i>
+      <i className="fas fa-star"></i>
+      <i className="fas fa-star"></i>
+      <i className="fas fa-star"></i>
+    </span>
+  )
+}
+
+const NormalStars = () => {
+  return (
+    <span style={{ color: "#999da0" }}>
+      <i className="fas fa-star"></i>
+    </span>
   )
 }
 
