@@ -3,7 +3,7 @@ import CategoryRow from './CategoryRow';
 
 const CourseCategories = () => {
     return (
-            <CategoryRow />
+        <CategoryRow />
     );
 }
 
