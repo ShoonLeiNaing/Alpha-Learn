@@ -10,7 +10,7 @@ import products, { android, databases } from "./Products";
 
 const Individual = ({ products, head }) => {
   return (
-    <div className="container">
+    <div className="category-container">
       <h5 className="blue-text text-darken-4 m-cc-course-head">{head}</h5>
       <Slider {...settings}>
         {products.map((x, i) => {

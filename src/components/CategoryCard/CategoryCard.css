@@ -1,0 +1,32 @@
+.category-card{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 30%;
+    height: 250px;
+    margin: 15px 0;
+    object-fit: contain;
+}
+
+.category-title{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+  
+}
+.category-title>h6{
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+@media screen and (max-width:600px){
+    .category-card{
+        width: 100%;
+    }
+}

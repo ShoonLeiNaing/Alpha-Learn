@@ -1,0 +1,24 @@
+.hot-categories{
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+.categoryCard-container{
+    margin:20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.explore-container > h5{
+    margin:20px 120px;
+    margin-top: 80px;
+}
+@media screen and (max-width:800px){
+    .categoryCard-container{
+        margin: 20px 50px;
+    }
+    .explore-container>h5{
+        margin: 50px;
+    }
+}
