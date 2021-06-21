@@ -8,21 +8,26 @@ import settings from "./SlickSetting";
 import products, { android, databases } from "./Products";
 
 
-const Individual = ({ products, head }) => {
+const Individual = ({ courses, heading }) => {
   return (
+<<<<<<< HEAD
     <div className="category-container">
       <h5 className="blue-text text-darken-4 m-cc-course-head">{head}</h5>
+=======
+    <div className="container">
+      <h5 className="blue-text text-darken-4 m-cc-course-head">{heading}</h5>
+>>>>>>> e8e5d854792de2686eb7644b3ad9405141bacb07
       <Slider {...settings}>
-        {products.map((x, i) => {
+        {courses.map((course, i) => {
           return (
             <div key={i} className="m-cc-img-card z-depth-3">
-              <img className="m-cc-img" src={x.img_src} alt={x.title} />
+              <img className="m-cc-img" src={course.img_src} alt={course.title} />
               <div className="m-cc-card-body">
-                <div className="m-cc-card-title">{x.title}</div>
-                <div className="m-cc-card-text">{x.mentor}</div>
+                <div className="m-cc-card-title">{course.title}</div>
+                <div className="m-cc-card-text">{course.mentor}</div>
                 <div className="m-cc-card-foot">
-                  <Stars starsCount={x.stars} />
-                  {x.total}
+                  <Stars starsCount={course.stars} />
+                  {course.total}
                 </div>
               </div>
             </div>
@@ -47,11 +52,11 @@ const CategoryRow = () => {
       {/* Course Main Header End */}
 
       {/* Course Category Row */}
-      <Individual head="Web development" products={products} />
-      <Individual head="Android development" products={android} />
-      <Individual head="Database SQL/NoSQL" products={databases} />
-      <Individual head="Product Designing" products={products} />
-      <Individual head="Sever Side" products={products} />
+      <Individual heading="Web development" courses={products} />
+      <Individual heading="Android development" courses={android} />
+      <Individual heading="Database SQL/NoSQL" courses={databases} />
+      <Individual heading="Product Designing" courses={products} />
+      <Individual heading="Sever Side" courses={products} />
       {/* Course Category Row End */}
     </>
   );

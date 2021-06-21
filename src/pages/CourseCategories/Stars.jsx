@@ -1,19 +1,19 @@
 import React from 'react';
 
-const Stars = (props) => {
+const Stars = ({ starsCount }) => {
     return (
         <>
-            <FullStars stars={props.starsCount} />
-            <NormalStars stars={props.starsCount} />
-        &nbsp;&nbsp;
+            <FullStars stars={starsCount} />
+            <NormalStars stars={starsCount} />
+            &nbsp;&nbsp;
         </>
     )
 }
 
-const FullStars = (props) => {
-    // calculate star rate, not counting from the sky
+const FullStars = ({ stars }) => {
+    // calculate star rate, not counting from the sky 🤣
     const fullStars = [];
-    for (let i = 1; i <= props.stars; i++) {
+    for (let i = 1; i <= stars; i++) {
         fullStars.push(
             <i key={i} className="fa fa-star"></i>
         );
@@ -26,9 +26,9 @@ const FullStars = (props) => {
     )
 }
 
-const NormalStars = (props) => {
+const NormalStars = ({ stars }) => {
     const normalStars = [];
-    for (let i = 0; i < 5 - props.stars; i++) {
+    for (let i = 0; i < 5 - stars; i++) {
         normalStars.push(
             <i key={i} className="fa fa-star"></i>
         )
