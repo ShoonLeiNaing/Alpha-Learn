@@ -19,7 +19,7 @@
 .card-imageContainer{
      flex: 0.3;
      background-color: lightgray;
-     height: 100px;
+     height: 130px;
      margin:0 30px;
 } 
 .card-textContainer{

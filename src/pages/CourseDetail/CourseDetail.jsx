@@ -2,9 +2,11 @@ import React from 'react'
 import ReadMoreReact from 'read-more-react';
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import {useParams} from 'react-router-dom'
 import './CourseDetail.css'
 
 export const CourseDetail = () => {
+    let {id} =useParams()
 
     const Header =({header})=>{
         return(
@@ -16,7 +18,7 @@ export const CourseDetail = () => {
                     </p>
                     <div><i class="large material-icons" style={{fontSize:'40px'}}>play_circle_outline</i></div>
                     <div className='waves-effect btn enroll-btn blue accent-3'>
-                        Enroll
+                        Enroll {id}
                     </div>
                 </div>
             </div>
