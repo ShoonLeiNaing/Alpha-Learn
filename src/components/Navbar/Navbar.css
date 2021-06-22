@@ -1,11 +1,11 @@
-.nav-container{
-  margin:0 80px;
+.nav-container {
+  margin: 0 80px;
   display: flex;
   justify-content: space-between;
 }
 
 /* input */
-.input-container{
+.input-container {
   width: 25%;
   display: flex;
   flex-direction: row;
@@ -16,35 +16,32 @@
   height: 40px;
   margin-top: 10px;
   padding-left: 15px;
-  
 }
-input{
+input {
   border-bottom: none !important;
-  height:25px !important;
+  height: 25px !important;
   margin-top: 8px !important;
-  
 }
-.input-container i{
-  margin:0 20px;
+.input-container i {
+  margin: 0 20px;
 }
 
-.btn-container{
+.btn-container {
   margin-left: 40px;
 }
-.nav-btn{
+.nav-btn {
   width: 80%;
 }
-.nav-container>.dropdown{
+.nav-container > .dropdown {
   background-color: aqua !important;
 }
 
-@media screen and (max-width:670px){
-  
-  .nav-container{
-    margin:0;
+@media screen and (max-width: 670px) {
+  .nav-container {
+    margin: 0;
   }
-  
-  .input-container{
+
+  .input-container {
     display: none;
   }
 }
