@@ -13,8 +13,10 @@ function App() {
         <Route exact path="/cc" component={CourseCategories} />
       </Switch> */}
       <Switch>
-       <Route exact path='/' component={Explore} />
-       <Route exact path="/cc" component={CourseCategories} />
+       <Route exact path='/' component={Home} />
+       <Route path='/explore' component={Explore}></Route>
+       <Route path="/category" component={CourseCategories} />
+       <Route path='/courseDetail/:id' component={CourseDetail}></Route>
 
      </Switch>
     </Router>

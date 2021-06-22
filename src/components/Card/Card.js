@@ -2,6 +2,7 @@ import React from 'react'
 import './Card.css'
 
 const Card = () => {
+    
     return (
         <div className='card__container'>
             <h5 className='card-title'>
