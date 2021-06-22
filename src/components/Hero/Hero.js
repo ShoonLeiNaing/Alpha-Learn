@@ -12,7 +12,7 @@ const Hero = () => {
                     <Link to='/explore' class="waves-effect waves-light btn  blue accent-3 heroBtn" >Explore </Link>
                 </div>
                 <div className='col s12 m12 image-container'>
-                    <img src={img} />
+                    <img src={img} alt="" />
                 </div>
             </div>
         </div>
