@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { CategoryCard } from '../../components/CategoryCard/CategoryCard'
 import { FeaturedCourse } from '../../components/FeaturedCourse/FeaturedCourse'
 import { Input } from '../../components/Input/Input'

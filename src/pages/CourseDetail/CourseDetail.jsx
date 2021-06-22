@@ -68,7 +68,7 @@ export const CourseDetail = () => {
         )
     }
 
-    const Instructor = ({ }) => {
+    const Instructor = () => {
         return (
             <div className='objectives-container'>
                 <h5 className='blue-text'>Instructors</h5>
