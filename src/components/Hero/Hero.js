@@ -14,6 +14,7 @@ const Hero = () => {
                 <div className='col s12 m12 image-container'>
                     <img src={img} alt="" />
                 </div>
+                <i class="fa fa-facebook-square"></i>
             </div>
         </div>
     )

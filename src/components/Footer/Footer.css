@@ -1,3 +1,31 @@
 .page-footer{
     margin-top: 40px;
+    background-color: #000080;
+    letter-spacing: 3px;
+}
+
+.footer-container, 
+.footer-copyright>p{
+    margin:0 100px;
+}
+
+.footer-image{
+    height: 70px;
+    width: 200px;
+    object-fit: contain;
+}
+.footer-image>img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-icons{
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+
+.footer-icons>i{
+    font-size: 24px;
+    margin-right:20px;
+   
 }
