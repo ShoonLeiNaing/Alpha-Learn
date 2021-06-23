@@ -1,11 +1,15 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { CategoryCard } from '../../components/CategoryCard/CategoryCard'
 import { FeaturedCourse } from '../../components/FeaturedCourse/FeaturedCourse'
 import { Input } from '../../components/Input/Input'
 import './Explore.css'
+import CategoryRow from "../CourseCategories/CategoryRow";
+import { hotProducts } from "../CourseCategories/Products"; // fetch actual data
 
 export const Explore = () => {
+
+    let id = 2 // fetch actual data
     return (
         <div className='explore-container'>
             <Input title="Let's learn today" />
@@ -18,6 +22,8 @@ export const Explore = () => {
                 <CategoryCard title='Computer Science' />
                 <CategoryCard title='Health & Nursing' />
             </div>
+
+            <Link to={`/course-detail/${id}`}><CategoryRow heading="Most Viewed Courses" courses={hotProducts} /></Link>
 
             <h5>Featured Courses</h5>
             <FeaturedCourse />
