@@ -1,3 +1,4 @@
+// predenting to be actual data
 const products = [
     {
         img_src: "https://coursecouponclub.com/wp-content/uploads/2021/04/705264_caa9_11.jpg",
@@ -109,7 +110,53 @@ export const databases = [
         mentor: 'Google',
         total: 433201,
         stars: 4
-    }
+    },
+    {
+        img_src: 'https://brooksgroup.com/wp-content/uploads/2020/08/time_management_tips.jpg',
+        title: 'Time Management',
+        mentor: 'Roger',
+        total: 433201,
+        stars: 4
+    },
+]
+
+export const hotProducts = [
+    {
+        img_src: 'https://gocode.colorado.gov/wp-content/uploads/2020/11/MongoDB-sm-logo-500x400.gif',
+        title: 'Mongo',
+        mentor: 'Official',
+        total: 433201,
+        stars: 4
+    },
+    {
+        img_src: "https://coursecouponclub.com/wp-content/uploads/2021/04/705264_caa9_11.jpg",
+        title: 'React & Redux',
+        mentor: 'Johnathan',
+        total: 433201,
+        stars: 4
+    },
+    {
+        img_src: 'https://brooksgroup.com/wp-content/uploads/2020/08/time_management_tips.jpg',
+        title: 'Time Management',
+        mentor: 'Roger',
+        total: 433201,
+        stars: 4
+    },
+    {
+        img_src: 'https://engineering.fb.com/wp-content/uploads/2012/12/javascript-illustration.png',
+        title: 'JavaScript Fullcourse',
+        mentor: 'Mosh',
+        total: 433201,
+        stars: 4
+    },
+    {
+        img_src: 'https://exaud.com/wp-content/uploads/2017/06/Android-Now-Oficially-Supports-Kotlin-Programming-Language.jpeg',
+        title: 'Kotlin',
+        mentor: 'Google',
+        total: 433201,
+        stars: 4
+    },
+
 ]
 
 export default products;

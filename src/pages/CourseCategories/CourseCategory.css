@@ -1,11 +1,19 @@
 /* CSS naming : m-component-*class  */
 
 /* card style start */
-.category-container{
-  margin:0px 120px;
+.m-cc-container {
+  margin: 0px 120px;
   margin-bottom: 80px;
   margin-top: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+  .m-cc-container {
+    margin: 0px;
+    margin-left: 6px;
+  }
+}
+
 .m-cc-img-card {
   border-radius: 10px;
   background: white;
@@ -13,7 +21,6 @@
   overflow: hidden;
   box-shadow: 0 4px 6px 0 rgba(0.4, 0.6, 0.4, 0.2);
   transition: 0.3s;
-  
 }
 .m-cc-img-card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2, 0.5);
@@ -102,7 +109,6 @@ i {
 
 .m-cc-course-head {
   font-weight: 500;
-  
 }
 
 .m-cc-course-main-head {
