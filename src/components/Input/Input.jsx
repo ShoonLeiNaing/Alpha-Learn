@@ -7,7 +7,7 @@ export const Input = ({title}) => {
             <h4>{title}</h4>
             <div className='exploreInput'>
                 <input placeholder='Search courses' />
-                <i class="material-icons grey-text">search</i>
+                <i className="material-icons grey-text">search</i>
             </div>
         </div>
     )

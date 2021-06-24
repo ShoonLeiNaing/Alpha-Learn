@@ -22,7 +22,7 @@ function EmailRequest() {
                     <h6>Get updates from Alpha</h6>
                     <input className='emailform-input white' placeholder='Enter your email address' />
 
-                    <div class="waves-effect waves-light btn blue accent-3 ">Subscribe</div>
+                    <div className="waves-effect waves-light btn blue accent-3 ">Subscribe</div>
 
                 </div>
             </div>
