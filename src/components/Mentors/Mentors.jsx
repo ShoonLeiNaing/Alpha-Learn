@@ -9,7 +9,7 @@ const handleAfterDocumentLoaded = () => {
 }
 
 const Individual = props => (
-    <div className="carousel-item white red-text" href={`#${props.key}!`}>
+    <div className="carousel-item white red-text" href={`#!`}>
         <h2 className="roll-text">{props.roll}</h2>
         <div>
             <img className="circle responsive-image" src={props.image_src} alt={props.image_alt} />
@@ -62,7 +62,7 @@ const Mentors = () => {
 
     const sample_fetches = [
         {
-            key: `one`,
+            id: "mentor_one",
             roll: `Testimonal - 1`,
             name: `Kyi Sin Thant`,
             image_src: `https://via.placeholder.com/185`,
@@ -73,7 +73,7 @@ const Mentors = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
         },
         {
-            key: `two`,
+            id: "mentor_two",
             roll: `Testimonal - 2`,
             name: `Name : Goes Here`,
             image_src: `https://via.placeholder.com/185`,
@@ -83,7 +83,7 @@ const Mentors = () => {
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
         },
         {
-            key: `three`,
+            id: "mentor_three",
             roll: `Testimonal - 3`,
             name: `Name : Goes Here`,
             image_src: `https://via.placeholder.com/185`,
@@ -94,7 +94,7 @@ const Mentors = () => {
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
         },
         {
-            key: `four`,
+            id: "mentor_four",
             roll: `Testimonal - 4`,
             name: `Name : Goes Here`,
             image_src: `https://via.placeholder.com/185`,
@@ -108,9 +108,9 @@ const Mentors = () => {
     return (
         <div className="carousel carousel-slider center neg-height">
             <NavigationButtons />
-            {sample_fetches.map(({ key, roll, name, image_src, image_alt, about }) => (
+            {sample_fetches.map(({ id, roll, name, image_src, image_alt, about }) => (
                 <Individual
-                    key={key}
+                    key={id}
                     roll={roll}
                     name={name}
                     image_src={image_src}
