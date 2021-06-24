@@ -22,10 +22,10 @@ const Navbar = () => {
                             <div><a className="brand-logo black-text" href="/">Logo</a></div>
                             <div className='input-container'>
                                 <input placeholder='what do you want to learn today?' />
-                                <i class="material-icons black-text">search</i>
+                                <i className="material-icons black-text">search</i>
                             </div>
 
-                            <ul id="extra-dropdown" class="dropdown-content">
+                            <ul id="extra-dropdown" className="dropdown-content">
 
                                 <li><a href="#!">one</a></li>
                                 <li><a href="#!">two</a></li>
@@ -33,14 +33,14 @@ const Navbar = () => {
 
                             </ul>
                             <ul className="right hide-on-med-and-down black-text">
-                                <li className='dropdown'><a class="dropdown-trigger black-text" data-target="extra-dropdown" href="#!">More<i class="material-icons right">arrow_drop_down</i></a></li>
+                                <li className='dropdown'><a className="dropdown-trigger black-text" data-target="extra-dropdown" href="#!">More<i className="material-icons right">arrow_drop_down</i></a></li>
 
                                 <li><a href="/" className='black-text'>Home</a></li>
                                 <li><a href="/explore" className='black-text'>Courses</a></li>
                                 <li><a href="#!" className='black-text'>Campus</a></li>
                                 <li>
                                     <div className='btn-container'>
-                                        <a class="waves-effect waves-light btn blue accent-3 nav-btn" href="#!">Login</a>
+                                        <a className="waves-effect waves-light btn blue accent-3 nav-btn" href="#!">Login</a>
                                     </div>
                                 </li>
                             </ul>
@@ -53,7 +53,7 @@ const Navbar = () => {
                     <li><a href="/explore">Courses</a></li>
                     <li><a href="#!">Campus</a></li>
                     <li>
-                        <a class="waves-effect waves-light btn nav-btn blue accent-3" href="#!">Login</a>
+                        <a className="waves-effect waves-light btn nav-btn blue accent-3" href="#!">Login</a>
                     </li>
                 </ul>
 

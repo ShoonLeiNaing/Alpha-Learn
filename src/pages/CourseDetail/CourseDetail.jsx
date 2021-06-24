@@ -14,7 +14,7 @@ export const CourseDetail = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
-                    <div><i class="large material-icons" style={{ fontSize: '40px' }}>play_circle_outline</i></div>
+                    <div><i className="large material-icons" style={{ fontSize: '40px' }}>play_circle_outline</i></div>
                     <div className='waves-effect btn enroll-btn blue accent-3'>
                         Enroll {id}
                     </div>
@@ -81,7 +81,7 @@ export const CourseDetail = () => {
                             <p>Instructor</p>
                             <p>UI/UX department</p>
                             <div className='instructor-icons'>
-                                <i class="material-icons" style={{ fontSize: '12px', marginRight: '5px' }}>import_contacts</i>
+                                <i className="material-icons" style={{ fontSize: '12px', marginRight: '5px' }}>import_contacts</i>
                                 <p>7 courses</p>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ export const CourseDetail = () => {
                             <p>Instructor</p>
                             <p>UI/UX department</p>
                             <div className='instructor-icons'>
-                                <i class="material-icons" style={{ fontSize: '12px', marginRight: '5px' }}>import_contacts</i>
+                                <i className="material-icons" style={{ fontSize: '12px', marginRight: '5px' }}>import_contacts</i>
                                 <p>7 courses</p>
                             </div>
                         </div>

@@ -9,6 +9,13 @@
     margin:0 100px;
 }
 
+@media only screen and (max-width:600px) {
+    .footer-container, 
+    .footer-copyright>p{
+        margin:0 20px;
+    }
+}
+
 .footer-image{
     height: 70px;
     width: 200px;

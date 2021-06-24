@@ -6,45 +6,45 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer class="page-footer">
-      <div class="footer-container">
-        <div class="row">
-          <div class="col l4 s12">
-            <h5 class="white-text">Alpha</h5>
+    <footer className="page-footer">
+      <div className="footer-container">
+        <div className="row">
+          <div className="col l4 s12">
+            <h5 className="white-text">Alpha</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
             </ul>
           </div>
-          <div class="col l4 offset-l2 m6 s12">
-            <h5 class="white-text">Forums</h5>
+          <div className="col l4 offset-l2 m6 s12">
+            <h5 className="white-text">Forums</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
             </ul>
           </div>
-          <div class="col l4 offset-l2 m6 s12">
+          <div className="col l4 offset-l2 m6 s12">
             <div className='footer-image'>
-              <img src={googleimg} />
+              <img src={googleimg} alt=""/>
             </div>
             <div className='footer-image'>
-              <img src={appleimg} />
+              <img src={appleimg} alt=""/>
             </div>
             <div className='footer-icons '>
-          <i class="fa fa-facebook-official" ></i>
-          <i class="fa fa-comment"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          <i className="fa fa-facebook-official" ></i>
+          <i className="fa fa-comment"></i>
+          <i className="fa fa-instagram"></i>
+          <i className="fa fa-youtube-play" aria-hidden="true"></i>
         </div>
           </div>
 
         </div>
       </div>
-      <div class="footer-copyright">
+      <div className="footer-copyright">
 
         <p> © 2014 Copyright Text</p>
        
