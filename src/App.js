@@ -6,6 +6,7 @@ import CourseCategories from "./pages/CourseCategories";
 import { Explore } from './pages/Explore/Explore';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import { CourseVideo } from './pages/CourseVideo/CourseVideo';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/explore' component={Explore}></Route>
           <Route path="/category" component={CourseCategories} />
           <Route path='/course-detail/:id' component={CourseDetail}></Route>
+          <Route path="/course-video" component={CourseVideo}></Route>
         </Switch>
       </Router>
       <Footer />
