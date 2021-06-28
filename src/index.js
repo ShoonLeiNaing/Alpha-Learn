@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { AuthProvider } from './contexts/AuthContext'
-import reducer, { initialState } from './reducer'
+import { AuthContextProvider } from './contexts/AuthContext'
+import reducer, { initialUserState } from './reducer'
 
 ReactDOM.render(
   <React.StrictMode>
-    <AuthProvider initialState={initialState} reducer={reducer}>
+    <AuthContextProvider initialState={initialUserState} reducer={reducer}>
       <App />
-    </AuthProvider>
+    </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
