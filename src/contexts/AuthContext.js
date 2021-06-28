@@ -1,12 +1,15 @@
-import React,{useContext,useReducer,createContext} from 'react'
+import React, { useReducer, createContext } from "react";
 
-const AuthContext = createContext()
+export const AuthContext = createContext();
 
-export function AuthProvider ({children,reducer,initialState}){
-    return(
-        <AuthContext.Provider value={useReducer(reducer,initialState)}>
+export const AuthContextProvider = ({ children, reducer, initialState }) => {
+    const [globalUserState, dispatch] = useReducer(initialState, reducer);
+
+    return (
+        <AuthContext.Provider value={{ globalUserState, dispatch }}>
             {children}
         </AuthContext.Provider>
     )
 }
-export const useStateValue =()=> useContext(AuthContext)
+// export const useStateValue = () => useContext(AuthContext)
+// const { globalUserState, dispatch } = useContext(AuthContext)  //, using authContext
