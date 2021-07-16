@@ -1,24 +1,25 @@
 import React from 'react';
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import "./CourseCategory.css";
-import Stars from "./Stars";
+import "./SlickStyles.css";
+import styles from "./CategoryRow.module.css";
 import settings from "./SlickSetting";
+import Stars from "./Stars";
 
 const CategoryRow = ({ courses, heading }) => { // { actual data }
   return (
-    <div className="m-cc-container">
-      <h5 className="blue-text text-darken-4 m-cc-course-head">{heading}</h5>
+    <div className={styles.container}>
+      <h5 className={`${styles.course_head} blue-text text-darken-4`}>{heading}</h5>
       <Slider {...settings}>
         {courses.map((course, i) => {
           return (
-            <div key={i} className="m-cc-img-card z-depth-3">
-              <img className="m-cc-img" src={course.img_src} alt={course.title} />
-              <div className="m-cc-card-body">
-                <div className="m-cc-card-title">{course.title}</div>
-                <div className="m-cc-card-text">{course.mentor}</div>
-                <div className="m-cc-card-foot">
+            <div key={i} className={`${styles.img_card} z-depth-3`}>
+              <img className={styles.img} src={course.img_src} alt={course.title} />
+              <div className={styles.card_body}>
+                <div className={styles.card_title}>{course.title}</div>
+                <div className={styles.card_text}>{course.mentor}</div>
+                <div className={styles.card_foot}>
                   <Stars starsCount={course.stars} />
                   {course.total}
                 </div>

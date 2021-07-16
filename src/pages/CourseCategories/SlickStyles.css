@@ -1,0 +1,62 @@
+/* 
+slick is not compatible with CSS Modules
+*/
+
+/* carousel slider style start */
+.slick-slide > div {
+  margin: 15px 10px 15px 10px;
+}
+.slick-list {
+  z-index: -1;
+  margin: 0 0 0 0;
+  position: relative;
+}
+.slick-slider {
+  margin: 10px;
+}
+.slick-slide *:focus {
+  outline: none;
+}
+/* carousel slider style end */
+
+/* carousel arrow style start */
+.slick-prev:before,
+.slick-next:before {
+  top: -10px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  /* font-family: "slick"; */
+  /* font-size: 50px; */
+  font-size: calc(5vh);
+  line-height: 1;
+  color: grey;
+  opacity: 0.75;
+  z-index: 9;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:before {
+  content: "\f137";
+  margin-right: -45px !important;
+}
+.slick-next:before {
+  content: "\f138";
+  margin-left: -45px;
+}
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-dots {
+  bottom: -15px;
+}
+/* carousel arrow style end */
+
+/* .fa-stack {
+  font-size: 0.5em;
+}
+i {
+  vertical-align: middle;
+} */
+
